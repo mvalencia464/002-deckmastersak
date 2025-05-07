@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Deck Masters AK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF6B00",
+              accent: "#FFFFFF",
+              dark: "#1A1A1A",
+            },
+            fontFamily: {
+              sans: ['"Inter"', "system-ui", "-apple-system", "sans-serif"],
+              serif: ['"Merriweather"', "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeIn {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+
+      .hover-grow {
+        transition: transform 0.2s ease;
+      }
+      .hover-grow:hover {
+        transform: scale(1.02);
+      }
+
+      .service-card {
+        transition: all 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      /* Gallery Styles */
+      .gallery-item {
+        overflow: hidden;
+        position: relative;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.02);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      #galleryModal {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+
+      #galleryModal.active {
+        opacity: 1;
+        pointer-events: auto;
+        display: flex !important;
+      }
+
+      #modalImage {
+        transition: opacity 0.3s ease;
+      }
+
+      .modal-fade {
+        opacity: 0;
+      }
+    </style>
+    <script>
+      !(function (Gleap, t, i) {
+        if (!(Gleap = window.Gleap = window.Gleap || []).invoked) {
+          for (
+            window.GleapActions = [],
+              Gleap.invoked = !0,
+              Gleap.methods = [
+                "identify",
+                "setEnvironment",
+                "setTags",
+                "attachCustomData",
+                "setCustomData",
+                "removeCustomData",
+                "clearCustomData",
+                "registerCustomAction",
+                "trackEvent",
+                "setUseCookies",
+                "log",
+                "preFillForm",
+                "showSurvey",
+                "sendSilentCrashReport",
+                "startFeedbackFlow",
+                "startBot",
+                "setAppBuildNumber",
+                "setAppVersionCode",
+                "setApiUrl",
+                "setFrameUrl",
+                "isOpened",
+                "open",
+                "close",
+                "on",
+                "setLanguage",
+                "setOfflineMode",
+                "startClassicForm",
+                "initialize",
+                "disableConsoleLogOverwrite",
+                "logEvent",
+                "hide",
+                "enableShortcuts",
+                "showFeedbackButton",
+                "destroy",
+                "getIdentity",
+                "isUserIdentified",
+                "clearIdentity",
+                "openConversations",
+                "openConversation",
+                "openHelpCenterCollection",
+                "openHelpCenterArticle",
+                "openHelpCenter",
+                "searchHelpCenter",
+                "openNewsArticle",
+                "openChecklists",
+                "startChecklist",
+                "openNews",
+                "openFeatureRequests",
+                "isLiveMode",
+              ],
+              Gleap.f = function (e) {
+                return function () {
+                  var t = Array.prototype.slice.call(arguments);
+                  window.GleapActions.push({ e: e, a: t });
+                };
+              },
+              t = 0;
+            t < Gleap.methods.length;
+            t++
+          )
+            Gleap[(i = Gleap.methods[t])] = Gleap.f(i);
+          (Gleap.load = function () {
+            var t = document.getElementsByTagName("head")[0],
+              i = document.createElement("script");
+            (i.type = "text/javascript"),
+              (i.async = !0),
+              (i.src = "https://sdk.gleap.io/latest/index.js"),
+              t.appendChild(i);
+          }),
+            Gleap.load(),
+            Gleap.initialize("Le4XSrNn7xevt3DUbw1r1emJALTdPTu0");
+        }
+      })();
+    </script>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed w-full z-50 transition-all duration-300 py-4"
+    >
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="index.html">
+              <img
+                src="https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6509ff1388b772165a9c9662.svg+xml"
+                alt="Deck Masters AK Logo"
+                class="h-6 md:h-8 logo-transparent"
+              />
+              <img
+                src="https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bc79415db97ca86c1b7c.png"
+                alt="Deck Masters AK Logo"
+                class="h-6 md:h-8 logo-solid hidden"
+              />
+            </a>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-8">
+            <nav>
+              <ul class="flex space-x-6">
+                <li>
+                  <a
+                    href="services.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="portfolio.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="team.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Our Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#contact"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <a
+              href="tel:9077824043"
+              class="flex items-center bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md font-medium transition"
+            >
+              <svg
+                class="w-[18px] h-[18px] mr-2"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              (907) 782-4043
+            </a>
+          </div>
+
+          <button class="md:hidden text-primary" onclick="toggleMobileMenu()">
+            <svg
+              class="w-7 h-7"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-white shadow-lg fixed top-0 left-0 right-0 z-50 mt-16 max-h-[calc(100vh-4rem)] overflow-y-auto"
+      >
+        <nav class="container mx-auto px-4 py-4">
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="services.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="portfolio.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a
+                href="team.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="index.html#contact"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:9077824043"
+                class="flex items-center w-full bg-primary hover:bg-primary/90 text-white px-4 py-3 rounded-md font-medium justify-center transition"
+                onclick="closeMobileMenu()"
+              >
+                <svg
+                  class="w-[18px] h-[18px] mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                (907) 782-4043
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      // Header scroll effect
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("header");
+        const navLinks = document.querySelectorAll(".nav-link");
+        const logoTransparent = document.querySelector(".logo-transparent");
+        const logoSolid = document.querySelector(".logo-solid");
+
+        if (window.scrollY > 20) {
+          header.classList.remove("py-4");
+          header.classList.add("bg-white", "shadow-md", "py-2");
+          navLinks.forEach((link) => {
+            link.classList.remove("text-white");
+            link.classList.add("text-gray-800");
+          });
+          logoTransparent.classList.add("hidden");
+          logoSolid.classList.remove("hidden");
+        } else {
+          header.classList.add("py-4");
+          header.classList.remove("bg-white", "shadow-md", "py-2");
+          navLinks.forEach((link) => {
+            link.classList.add("text-white");
+            link.classList.remove("text-gray-800");
+          });
+          logoTransparent.classList.remove("hidden");
+          logoSolid.classList.add("hidden");
+        }
+      });
+
+      // Mobile menu toggle
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        const header = document.getElementById("header");
+
+        // Adjust mobile menu position based on header height
+        const headerHeight = header.offsetHeight;
+        mobileMenu.style.marginTop = headerHeight + "px";
+
+        mobileMenu.classList.toggle("hidden");
+      }
+
+      function closeMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.add("hidden");
+      }
+    </script>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] flex items-center">
+      <div class="absolute inset-0">
+        <img
+          src="https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa63c93d93f2617c531.webp"
+          alt="Beautiful custom deck in Alaska"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/70 to-primary/80"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center text-white">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            Expert Deck Solutions Tailored to Your Alaskan Lifestyle
+          </h1>
+          <p class="hidden md:block text-xl opacity-90">
+            Custom designs and quality craftsmanship for decks that withstand
+            Alaska's unique challenges
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Introduction -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <p class="text-lg text-gray-700 mb-8">
+            At Deck Masters, we offer a comprehensive range of deck services
+            designed to bring your outdoor vision to life and withstand the
+            unique challenges of the Alaskan environment. From initial design to
+            final construction and even urgent repairs, our skilled team is
+            equipped to handle projects of any complexity with precision and
+            care.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-16 text-primary"
+        >
+          Our Core Services
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Service 1: Custom Deck Design -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e3bc7e9aa0f.webp"
+                alt="Custom Deck Design"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Custom Deck Design & Consultation
+              </h3>
+              <p class="text-gray-600">
+                Have a vision? We'll help you refine it. Our experts work with
+                you to design a deck that perfectly suits your needs, aesthetic
+                preferences, and property. We consider everything from materials
+                like cedar, Trex, and glass to features like solariums,
+                pergolas, and wheelchair accessibility.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 2: New Deck Construction -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa63c93d9c48b17c52e.webp"
+                alt="New Deck Construction"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                New Deck Construction
+              </h3>
+              <p class="text-gray-600">
+                Building a brand new deck? We specialize in high-quality
+                construction, ensuring a sturdy, beautiful, and long-lasting
+                addition to your home. Our team is experienced in building on
+                challenging terrains, including hillsides, and in all Alaskan
+                seasons, even winter.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 3: Deck Replacement -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc52ae1036853.webp"
+                alt="Deck Replacement"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Deck Replacement & Demolition
+              </h3>
+              <p class="text-gray-600">
+                Is your old deck damaged, deteriorating, or simply not meeting
+                your needs? We handle complete tear-downs and replacements,
+                transforming your outdoor space efficiently. We take care of
+                removing your "crumbling" or "rickety" old deck and building a
+                solid new foundation for outdoor enjoyment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 4: Deck Repair -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e4511e9aa0b.webp"
+                alt="Deck Repair"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Deck Repair & Restoration
+              </h3>
+              <p class="text-gray-600">
+                Facing issues like damaged railings, stairs, rot, or even sudden
+                ice damage? We provide prompt and reliable repair services to
+                restore the safety and beauty of your deck. We've saved the day
+                for clients needing urgent repairs, even right before a house
+                sale!
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 5: Complex Project Management -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc51268036852.webp"
+                alt="Complex Project Management"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Complex Project Management
+              </h3>
+              <p class="text-gray-600">
+                Don't let project complexity overwhelm you. We manage all
+                aspects, including navigating municipal permitting, working
+                around tight utility corridors, installing pilings, and
+                incorporating features like hot tubs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 6: Additions & Enhancements -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6687a8429a8d72512.webp"
+                alt="Deck Additions"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Additions & Enhancements
+              </h3>
+              <p class="text-gray-600">
+                Looking to expand your current deck or add new features? We can
+                build multi-level decks, add pergolas with privacy walls,
+                decorative lattice trim, "dog-proof" fencing, and more to
+                enhance your outdoor living space.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-6 text-primary"
+        >
+          Our Project Gallery
+        </h2>
+        <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
+          Browse through our collection of completed deck projects. Click on any
+          image to view larger and navigate through the gallery.
+        </p>
+
+        <!-- Gallery Grid -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          id="galleryGrid"
+        >
+          <!-- Gallery images will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div
+      id="galleryModal"
+      class="fixed inset-0 bg-black/90 z-[100] hidden flex items-center justify-center"
+    >
+      <button
+        id="closeModal"
+        class="absolute top-4 right-4 text-white hover:text-primary transition-colors"
+      >
+        <svg
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <button
+        id="prevImage"
+        class="absolute left-4 md:left-8 text-white hover:text-primary transition-colors"
+      >
+        <svg
+          class="w-10 h-10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div
+        id="modalImageContainer"
+        class="w-full max-w-5xl px-4 max-h-[80vh] flex items-center justify-center"
+      >
+        <img
+          id="modalImage"
+          src=""
+          alt="Enlarged gallery image"
+          class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+        />
+      </div>
+
+      <button
+        id="nextImage"
+        class="absolute right-4 md:right-8 text-white hover:text-primary transition-colors"
+      >
+        <svg
+          class="w-10 h-10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <div
+        id="imageCounter"
+        class="absolute bottom-4 left-0 right-0 text-center text-white text-sm"
+      >
+        <span id="currentImageIndex">1</span> / <span id="totalImages">0</span>
+      </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary"
+        >
+          Why Choose Our Services
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <!-- Reason 1 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"
+                ></path>
+                <line x1="16" y1="8" x2="2" y2="22"></line>
+                <line x1="17.5" y1="15" x2="9" y2="15"></line>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Built for Alaska
+            </h3>
+            <p class="text-gray-600">
+              Our decks are constructed to endure Alaskan weather, providing you
+              with a durable and lasting investment.
+            </p>
+          </div>
+
+          <!-- Reason 2 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Quality Craftsmanship
+            </h3>
+            <p class="text-gray-600">
+              Our skilled carpenters are "perfectionists" and "artists" who
+              deliver "top-notch quality work."
+            </p>
+          </div>
+
+          <!-- Reason 3 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Efficient & Timely
+            </h3>
+            <p class="text-gray-600">
+              We are known for completing projects "impressively quick," often
+              "ahead of schedule," without sacrificing quality.
+            </p>
+          </div>
+
+          <!-- Reason 4 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Clear Communication
+            </h3>
+            <p class="text-gray-600">
+              From start to finish, expect excellent communication,
+              transparency, and a team that listens to your input.
+            </p>
+          </div>
+
+          <!-- Reason 5 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 3h18v18H3zM12 8v8m-4-4h8"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Clean & Respectful
+            </h3>
+            <p class="text-gray-600">
+              Our crews maintain a clean worksite and are respectful of your
+              property throughout the entire project.
+            </p>
+          </div>
+
+          <!-- Reason 6 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="M12 16v.01"></path>
+                <path d="M8 11h8"></path>
+                <path d="M8 8h8"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Honest Pricing</h3>
+            <p class="text-gray-600">
+              We provide fair, transparent quotes with no hidden costs or
+              surprise "cost overrides."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">
+            Ready to Transform Your Outdoor Space?
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            Contact us today for a consultation and let's bring your deck vision
+            to life!
+          </p>
+          <a
+            href="index.html#contact"
+            class="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-md font-semibold transition"
+          >
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <img
+              src="https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6509ff1388b772165a9c9662.svg+xml"
+              alt="Deck Masters AK Logo"
+              class="h-6 mb-4"
+            />
+            <p class="text-gray-300 mb-4">
+              Anchorage's premier deck building specialists. No ghosting. No
+              guesswork. Just gorgeous decks.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-primary hover:text-primary/80 transition">
+                <span class="sr-only">Facebook</span>
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="text-primary hover:text-primary/80 transition">
+                <span class="sr-only">Instagram</span>
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                <a href="tel:9077824043" class="hover:text-primary transition"
+                  >(907) 782-4043</a
+                >
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <a
+                  href="mailto:contact@deckmastersak.com"
+                  class="hover:text-primary transition"
+                  >contact@deckmastersak.com</a
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary mt-1"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>625 W 59th Ave Unit J, Anchorage, AK 99518</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Hours & Information</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li>Open 7:30am-7:00pm Daily</li>
+              <li>Serving Anchorage & Surrounding Areas</li>
+              <li>Fully Insured and Bonded</li>
+              <li>Deck Building Specialists</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 pt-8 mt-8 text-gray-300 text-sm text-center"
+        >
+          <p>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Deck Masters AK. All rights reserved.
+          </p>
+          <p class="mt-2">
+            <a href="#" class="hover:text-primary transition">Privacy Policy</a>
+            {' | '}
+            <a href="#" class="hover:text-primary transition"
+              >Terms of Service</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Gallery JavaScript -->
+    <script>
+      // Gallery image data
+      const galleryImages = [
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/681af97a6d12af4a268bb089.webp",
+          alt: "Custom deck project in Anchorage",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e3bc7e9aa0f.webp",
+          alt: "Multi-level deck with Trex decking",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa63c93d9c48b17c52e.webp",
+          alt: "Completed deck project with custom railings",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc52ae1036853.webp",
+          alt: "Hillside deck construction",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e4511e9aa0b.webp",
+          alt: "Custom cedar deck with glass railings",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc51268036852.webp",
+          alt: "Deck with integrated hot tub platform",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6687a8429a8d72512.webp",
+          alt: "Custom deck with pergola",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa63c93d93f2617c531.webp",
+          alt: "Deck with privacy wall feature",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6687a84eb7ad72514.webp",
+          alt: "Elevated deck with custom stairs",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6687a840dccd72516.webp",
+          alt: "Deck with built-in seating area",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6415db9048b6c1f70.webp",
+          alt: "Winter deck construction project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437eddcae9aa0c.webp",
+          alt: "Custom deck with glass railings",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e9869e9aa12.webp",
+          alt: "Multi-level entertainment deck",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e299be9aa18.webp",
+          alt: "Deck with custom lighting features",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6687a84c7ced7250f.webp",
+          alt: "Deck replacement project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_320/u_https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc5ce8c036857.webp",
+          alt: "Custom deck with awning",
+        },
+      ];
+
+      // Variables for gallery functionality
+      let currentImageIndex = 0;
+
+      // DOM elements
+      const galleryGrid = document.getElementById("galleryGrid");
+      const galleryModal = document.getElementById("galleryModal");
+      const modalImage = document.getElementById("modalImage");
+      const closeModal = document.getElementById("closeModal");
+      const prevImage = document.getElementById("prevImage");
+      const nextImage = document.getElementById("nextImage");
+      const currentImageIndexEl = document.getElementById("currentImageIndex");
+      const totalImagesEl = document.getElementById("totalImages");
+
+      // Initialize gallery
+      function initGallery() {
+        // Populate gallery grid with images
+        galleryImages.forEach((image, index) => {
+          const galleryItem = document.createElement("div");
+          galleryItem.className =
+            "gallery-item rounded-lg shadow-md overflow-hidden";
+          galleryItem.innerHTML = `
+            <img src="${image.src}" alt="${image.alt}" loading="lazy" />
+          `;
+
+          // Add click event to open modal
+          galleryItem.addEventListener("click", () => openModal(index));
+
+          galleryGrid.appendChild(galleryItem);
+        });
+
+        // Update total images count
+        totalImagesEl.textContent = galleryImages.length;
+
+        // Event listeners for modal controls
+        closeModal.addEventListener("click", closeGalleryModal);
+        prevImage.addEventListener("click", showPreviousImage);
+        nextImage.addEventListener("click", showNextImage);
+
+        // Keyboard navigation
+        document.addEventListener("keydown", handleKeyboardNavigation);
+
+        // Close modal when clicking outside the image
+        galleryModal.addEventListener("click", (e) => {
+          if (e.target === galleryModal) {
+            closeGalleryModal();
+          }
+        });
+      }
+
+      // Open modal with specific image
+      function openModal(index) {
+        currentImageIndex = index;
+        updateModalImage();
+        galleryModal.classList.add("active");
+        document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+      }
+
+      // Close modal
+      function closeGalleryModal() {
+        galleryModal.classList.remove("active");
+        document.body.style.overflow = ""; // Restore scrolling
+      }
+
+      // Update modal image and counter
+      function updateModalImage() {
+        // Add fade effect
+        modalImage.classList.add("modal-fade");
+
+        setTimeout(() => {
+          // Get the original src and replace r_320 with r_1080 for higher resolution in modal
+          const highResSrc = galleryImages[currentImageIndex].src.replace(
+            "r_320",
+            "r_1080"
+          );
+          modalImage.src = highResSrc;
+          modalImage.alt = galleryImages[currentImageIndex].alt;
+          currentImageIndexEl.textContent = currentImageIndex + 1;
+
+          // Remove fade effect after image is loaded
+          modalImage.onload = () => {
+            modalImage.classList.remove("modal-fade");
+          };
+        }, 300);
+      }
+
+      // Show previous image
+      function showPreviousImage() {
+        currentImageIndex =
+          (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+        updateModalImage();
+      }
+
+      // Show next image
+      function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+        updateModalImage();
+      }
+
+      // Handle keyboard navigation
+      function handleKeyboardNavigation(e) {
+        if (!galleryModal.classList.contains("active")) return;
+
+        switch (e.key) {
+          case "ArrowLeft":
+            showPreviousImage();
+            break;
+          case "ArrowRight":
+            showNextImage();
+            break;
+          case "Escape":
+            closeGalleryModal();
+            break;
+        }
+      }
+
+      // Initialize gallery when DOM is loaded
+      document.addEventListener("DOMContentLoaded", initGallery);
+    </script>
+  </body>
+</html>
