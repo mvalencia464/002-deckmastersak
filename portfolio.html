@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Deck Masters AK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F97316", // orange-500 as main color
+              dark: "#1A1A1A", // dark color for dark mode sections
+              light: "#F8F8F8", // light color for light sections
+            },
+            fontFamily: {
+              sans: ['"Inter"', "system-ui", "-apple-system", "sans-serif"],
+              serif: ['"Merriweather"', "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeIn {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+
+      .hover-grow {
+        transition: transform 0.2s ease;
+      }
+      .hover-grow:hover {
+        transform: scale(1.02);
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(75, 0, 130, 0.2);
+      }
+
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .before-after-slider {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        cursor: ew-resize;
+        border-radius: 0.5rem;
+        user-select: none;
+      }
+
+      .before-after-slider img {
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-drag: none;
+      }
+
+      .slider-handle {
+        position: absolute;
+        top: 50%;
+        width: 32px;
+        height: 32px;
+        background: #ffd700;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        pointer-events: none;
+      }
+    </style>
+    <script>
+      !(function (Gleap, t, i) {
+        if (!(Gleap = window.Gleap = window.Gleap || []).invoked) {
+          for (
+            window.GleapActions = [],
+              Gleap.invoked = !0,
+              Gleap.methods = [
+                "identify",
+                "setEnvironment",
+                "setTags",
+                "attachCustomData",
+                "setCustomData",
+                "removeCustomData",
+                "clearCustomData",
+                "registerCustomAction",
+                "trackEvent",
+                "setUseCookies",
+                "log",
+                "preFillForm",
+                "showSurvey",
+                "sendSilentCrashReport",
+                "startFeedbackFlow",
+                "startBot",
+                "setAppBuildNumber",
+                "setAppVersionCode",
+                "setApiUrl",
+                "setFrameUrl",
+                "isOpened",
+                "open",
+                "close",
+                "on",
+                "setLanguage",
+                "setOfflineMode",
+                "startClassicForm",
+                "initialize",
+                "disableConsoleLogOverwrite",
+                "logEvent",
+                "hide",
+                "enableShortcuts",
+                "showFeedbackButton",
+                "destroy",
+                "getIdentity",
+                "isUserIdentified",
+                "clearIdentity",
+                "openConversations",
+                "openConversation",
+                "openHelpCenterCollection",
+                "openHelpCenterArticle",
+                "openHelpCenter",
+                "searchHelpCenter",
+                "openNewsArticle",
+                "openChecklists",
+                "startChecklist",
+                "openNews",
+                "openFeatureRequests",
+                "isLiveMode",
+              ],
+              Gleap.f = function (e) {
+                return function () {
+                  var t = Array.prototype.slice.call(arguments);
+                  window.GleapActions.push({ e: e, a: t });
+                };
+              },
+              t = 0;
+            t < Gleap.methods.length;
+            t++
+          )
+            Gleap[(i = Gleap.methods[t])] = Gleap.f(i);
+          (Gleap.load = function () {
+            var t = document.getElementsByTagName("head")[0],
+              i = document.createElement("script");
+            (i.type = "text/javascript"),
+              (i.async = !0),
+              (i.src = "https://sdk.gleap.io/latest/index.js"),
+              t.appendChild(i);
+          }),
+            Gleap.load(),
+            Gleap.initialize("Le4XSrNn7xevt3DUbw1r1emJALTdPTu0");
+        }
+      })();
+    </script>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header
+      class="fixed w-full z-50 transition-all duration-300 py-4"
+      id="header"
+    >
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="index.html">
+              <img
+                src="https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6509ff1388b772165a9c9662.svg+xml"
+                alt="Deck Masters AK Logo"
+                class="h-6 md:h-8 logo-transparent"
+              />
+              <img
+                src="https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bc79415db97ca86c1b7c.png"
+                alt="Deck Masters AK Logo"
+                class="h-6 md:h-8 logo-solid hidden"
+              />
+            </a>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-8">
+            <nav>
+              <ul class="flex space-x-6">
+                <li>
+                  <a
+                    href="services.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="portfolio.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="team.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Our Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#contact"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <a
+              href="tel:9077824043"
+              class="flex items-center bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md font-medium transition"
+            >
+              <svg
+                class="w-[18px] h-[18px] mr-2"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              (907) 782-4043
+            </a>
+          </div>
+
+          <button class="md:hidden text-primary" onclick="toggleMobileMenu()">
+            <svg
+              class="w-7 h-7"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-white shadow-lg fixed top-0 left-0 right-0 z-50 mt-16 max-h-[calc(100vh-4rem)] overflow-y-auto"
+      >
+        <nav class="container mx-auto px-4 py-4">
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="services.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="portfolio.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a
+                href="team.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="index.html#contact"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:9077824043"
+                class="flex items-center w-full bg-primary hover:bg-primary/90 text-white px-4 py-3 rounded-md font-medium justify-center transition"
+                onclick="closeMobileMenu()"
+              >
+                <svg
+                  class="w-[18px] h-[18px] mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                (907) 782-4043
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="min-h-screen bg-gray-50">
+      <!-- Hero Section -->
+      <section class="relative h-[60vh] flex items-center">
+        <div class="absolute inset-0">
+          <img
+            src="https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc52ae1036853.webp"
+            alt="Beautiful Deck"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-black/70 to-primary/80"
+          ></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+          <div class="max-w-4xl mx-auto text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+              Our Craftsmanship Speaks for Itself
+            </h1>
+            <p class="hidden md:block text-xl mb-8 opacity-90">
+              Browse through our gallery of inspiring deck transformations and
+              see why we're Anchorage's #1 deck builder.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center items-center">
+              <div
+                class="flex items-center bg-primary/80 px-4 py-2 rounded-full"
+              >
+                <svg
+                  class="w-5 h-5 text-accent mr-2"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <span class="text-white font-semibold"
+                  >4.9/5 Average Rating</span
+                >
+              </div>
+              <div
+                class="flex items-center bg-primary/80 px-4 py-2 rounded-full"
+              >
+                <span class="text-white font-semibold"
+                  >96+ Verified Reviews</span
+                >
+              </div>
+              <div
+                class="flex items-center bg-primary/80 px-4 py-2 rounded-full"
+              >
+                <span class="text-white font-semibold"
+                  >Year-Round Construction</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Introduction -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <p class="text-lg text-gray-700 mb-6">
+              Welcome to the Deck Masters portfolio, a showcase of the
+              beautiful, durable, and custom decks we've had the pleasure of
+              building for homeowners across Anchorage and surrounding areas.
+              Each project reflects our commitment to quality, attention to
+              detail, and our ability to bring diverse visions to life—even in
+              the most challenging Alaskan conditions.
+            </p>
+            <p class="text-lg text-gray-700 mb-6">
+              Browse through our gallery to see examples of:
+            </p>
+            <ul class="list-disc pl-6 space-y-3 text-gray-700 mb-8">
+              <li>
+                <span class="font-semibold"
+                  >Stunning New Deck Constructions:</span
+                >
+                From simple and elegant to large and multi-level, see how we
+                create dream outdoor living spaces from the ground up.
+              </li>
+              <li>
+                <span class="font-semibold">Complex & Custom Designs:</span>
+                Explore projects featuring unique elements like integrated hot
+                tubs, pergolas, custom railings (including cedar and glass), and
+                solutions for challenging hillside properties.
+              </li>
+              <li>
+                <span class="font-semibold">Alaskan-Tough Builds:</span> See
+                examples of decks built to withstand the rigors of winter
+                construction and the demanding local climate.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Featured Deck Projects
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Swipe left and right on each project to see the before and after
+              transformation
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            id="projectsGrid"
+          >
+            <!-- Projects will be dynamically inserted here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Testimonials Section -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-primary mb-4">
+              What Our Clients Say
+            </h2>
+            <p class="text-gray-600">
+              Don't just take our word for it - hear from our satisfied
+              customers
+            </p>
+          </div>
+
+          <div class="relative">
+            <button
+              onclick="scrollVideos('left')"
+              class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <div
+              id="videoScroll"
+              class="flex overflow-x-auto gap-6 pb-6 scroll-smooth hide-scrollbar"
+              style="scroll-behavior: smooth"
+            >
+              <!-- Videos will be dynamically inserted here -->
+            </div>
+
+            <button
+              onclick="scrollVideos('right')"
+              class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Quotes Section -->
+      <section class="py-16 bg-dark text-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Magazine-Worthy Results</h2>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto">
+              Our customers consistently praise the quality and craftsmanship of
+              our deck builds
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          >
+            <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+              <p class="italic text-lg mb-4">
+                "It looks like it belongs on the cover of a magazine."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold"
+                >
+                  C
+                </div>
+                <p class="ml-3 font-medium">Client in Anchorage</p>
+              </div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+              <p class="italic text-lg mb-4">
+                "The decks are a work of art! The carpenters are so skilled."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold"
+                >
+                  P
+                </div>
+                <p class="ml-3 font-medium">Peggy Robinson</p>
+              </div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+              <p class="italic text-lg mb-4">
+                "Even the city inspector said, 'Wow, this is one of the cleanest
+                jobs I've seen.'"
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold"
+                >
+                  J
+                </div>
+                <p class="ml-3 font-medium">John in Eagle River</p>
+              </div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+              <p class="italic text-lg mb-4">
+                "Our new deck receives compliments constantly from neighbors and
+                passersby."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold"
+                >
+                  K
+                </div>
+                <p class="ml-3 font-medium">Kyle Van Peursem</p>
+              </div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+              <p class="italic text-lg mb-4">
+                "They completed absolutely beautiful work."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold"
+                >
+                  A
+                </div>
+                <p class="ml-3 font-medium">Anton Szender</p>
+              </div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+              <p class="italic text-lg mb-4">
+                "The workmanship is excellent right down to the last detail."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold"
+                >
+                  M
+                </div>
+                <p class="ml-3 font-medium">Mark Daly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              Ready for Your Dream Deck?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+              Inspired by what you see? Let's discuss how we can create a
+              "magazine-cover-worthy" deck for you.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="index.html#contact"
+                class="px-8 py-4 bg-dark hover:bg-dark/90 text-white font-semibold rounded-md transition"
+              >
+                Get Your Free Deck Estimate
+              </a>
+              <a
+                href="tel:9077824043"
+                class="px-8 py-4 bg-white hover:bg-gray-100 text-primary font-semibold rounded-md transition flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                Call Now: (907) 782-4043
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Header scroll effect
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("header");
+        const navLinks = document.querySelectorAll(".nav-link");
+        const logoTransparent = document.querySelector(".logo-transparent");
+        const logoSolid = document.querySelector(".logo-solid");
+
+        if (window.scrollY > 20) {
+          header.classList.remove("py-4");
+          header.classList.add("bg-white", "shadow-md", "py-2");
+          navLinks.forEach((link) => {
+            link.classList.remove("text-white");
+            link.classList.add("text-gray-800");
+          });
+          logoTransparent.classList.add("hidden");
+          logoSolid.classList.remove("hidden");
+        } else {
+          header.classList.add("py-4");
+          header.classList.remove("bg-white", "shadow-md", "py-2");
+          navLinks.forEach((link) => {
+            link.classList.add("text-white");
+            link.classList.remove("text-gray-800");
+          });
+          logoTransparent.classList.remove("hidden");
+          logoSolid.classList.add("hidden");
+        }
+      });
+
+      // Mobile menu toggle
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.toggle("hidden");
+      }
+
+      function closeMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.add("hidden");
+      }
+
+      // Projects data
+      const projects = [
+        {
+          id: 1,
+          title: "Multi-Level Trex Deck",
+          description:
+            "Custom multi-level deck with Trex composite decking and glass railings",
+          type: "Custom Deck",
+          beforeImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e3bc7e9aa0f.webp",
+          afterImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa63c93d9c48b17c52e.webp",
+          testimonial: {
+            text: "This summer was the 2nd TREX Deck built for me by Deck Masters. It was a much larger project with two levels that turned out beautifully. The whole thing looks so attractive it could be on the cover of a magazine.",
+            author: "Rebecca K.",
+            rating: 5,
+          },
+        },
+        {
+          id: 2,
+          title: "Hillside Deck with Hot Tub",
+          description:
+            "Complex hillside deck build with integrated hot tub platform and custom railings",
+          type: "Hillside Deck",
+          beforeImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc52ae1036853.webp",
+          afterImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc51268036852.webp",
+          testimonial: {
+            text: "We are so thankful we went with Deck Masters AK for our new deck. We had a multi level, 20+ year old deck with too many pilings in the ground and rotting wood. We wanted a fresh new, one level deck with new piling and trex decking. We also had a hot tub on the deck which added to the chaos.",
+            author: "Thomas Keller",
+            rating: 5,
+          },
+        },
+        {
+          id: 3,
+          title: "Custom Cedar Deck & Solarium",
+          description:
+            "Beautiful cedar deck with integrated glass solarium for year-round enjoyment",
+          type: "Custom Features",
+          beforeImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e4511e9aa0b.webp",
+          afterImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6687a8429a8d72512.webp",
+          testimonial: {
+            text: "Deck Masters insight and communication from the first meeting was impressive. They recognized our vision from the start and built a beautiful cedar and glass solarium on our deck that is stunning. The craftsmen who worked on site were perfectionists.",
+            author: "Gail Coons",
+            rating: 5,
+          },
+        },
+        {
+          id: 4,
+          title: "Winter Deck Construction",
+          description:
+            "Complete deck replacement during winter months with no delays",
+          type: "Winter Build",
+          beforeImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e3bc7e9aa0f.webp",
+          afterImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa63c93d9c48b17c52e.webp",
+          testimonial: {
+            text: "This company is AMAZING! They were able to take down my old deck in the middle of winter in one day...and start the new deck the next day. They were done with the entire project in 3 days! They are professional and deliver on all their promises.",
+            author: "Rita C.",
+            rating: 5,
+          },
+        },
+        {
+          id: 5,
+          title: "Pergola & Privacy Wall",
+          description:
+            "Custom pergola with integrated privacy wall and walkway with stairs",
+          type: "Custom Features",
+          beforeImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc52ae1036853.webp",
+          afterImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc51268036852.webp",
+          testimonial: {
+            text: "DM brought my Pergola dream to life! I wanted a tall privacy wall with my pergola and some where to have curtain rods, and a Walkway with stairs for my puppies. They created that for me with my ideas. They are attentive, honest, reliable, and have great attention to detail.",
+            author: "Heidi St.",
+            rating: 5,
+          },
+        },
+        {
+          id: 6,
+          title: "Second Story Deck",
+          description:
+            "Elevated second-story deck with custom railings and stairs",
+          type: "Elevated Deck",
+          beforeImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6687a8429a8d72512.webp",
+          afterImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e4511e9aa0b.webp",
+          testimonial: {
+            text: "We had our deck replaced by Jordan and his team, and the experience was fantastic from start to finish. Our new deck receives compliments constantly from neighbors and passersby. They stood by their warranty and replaced a center support beam that had developed a crack.",
+            author: "Kyle Van Peursem",
+            rating: 5,
+          },
+        },
+        {
+          id: 7,
+          title: "Backyard Entertainment Deck",
+          description:
+            "Large backyard deck designed for entertaining with built-in seating",
+          type: "Entertainment Deck",
+          beforeImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc52ae1036853.webp",
+          afterImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa63c93d9c48b17c52e.webp",
+          testimonial: {
+            text: "Deck Masters did a great job on our new deck! They were professional and great communicators. We sought out several quotes for our project and they provided the greatest value at the lowest cost. And once they broke ground they were impressively quick to complete the project!",
+            author: "Kyle Hooley",
+            rating: 5,
+          },
+        },
+        {
+          id: 8,
+          title: "Custom Deck with Awning",
+          description:
+            "Deck extension with custom-built awning for shade and weather protection",
+          type: "Custom Features",
+          beforeImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e3bc7e9aa0f.webp",
+          afterImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6687a8429a8d72512.webp",
+          testimonial: {
+            text: "Jordan and the crew did an awesome job of building out the awning for our existing deck! They were very quick to respond and got the entire job done within a few days. We started early in the week and were hosting a BBQ by the weekend, with nothing but compliments from our guests.",
+            author: "Bomby Kitchpanich",
+            rating: 5,
+          },
+        },
+        {
+          id: 9,
+          title: "Log Home Deck Replacement",
+          description:
+            "Custom deck replacement for log home with matching aesthetic",
+          type: "Deck Replacement",
+          beforeImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc51268036852.webp",
+          afterImage:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e4511e9aa0b.webp",
+          testimonial: {
+            text: "We chose Jordan and his team at Deck Masters to replace the existing decks on our log home and we couldn't be happier with our decision. Our decks are beautiful; the skill and craftsmanship is evident in all aspects of their work.",
+            author: "Nancy Konop",
+            rating: 5,
+          },
+        },
+      ];
+
+      // Client testimonial videos data
+      const instagramVideos = [
+        {
+          id: 1,
+          thumbnail:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6f7437e3bc7e9aa0f.webp",
+          videoUrl: "#",
+          title: "Multi-Level Deck Transformation",
+          views: "3.4K views",
+        },
+        {
+          id: 2,
+          thumbnail:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa63c93d9c48b17c52e.webp",
+          videoUrl: "#",
+          title: "Winter Deck Build Timelapse",
+          views: "2.8K views",
+        },
+        {
+          id: 3,
+          thumbnail:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc52ae1036853.webp",
+          videoUrl: "#",
+          title: "Custom Pergola Installation",
+          views: "4.2K views",
+        },
+        {
+          id: 4,
+          thumbnail:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6afecc51268036852.webp",
+          videoUrl: "#",
+          title: "Hillside Deck Construction",
+          views: "3.5K views",
+        },
+        {
+          id: 5,
+          thumbnail:
+            "https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6816bfa6687a8429a8d72512.webp",
+          videoUrl: "#",
+          title: "Customer Testimonial: Rebecca K.",
+          views: "5.1K views",
+        },
+      ];
+
+      // Before/After Slider functionality
+      class BeforeAfterSlider {
+        constructor(element) {
+          this.element = element;
+          this.beforeImage = element.querySelector(".before-image");
+          this.isDragging = false;
+          this.sliderPosition = 50;
+
+          this.element.addEventListener(
+            "mousedown",
+            this.startDragging.bind(this)
+          );
+          document.addEventListener("mousemove", this.drag.bind(this));
+          document.addEventListener("mouseup", this.stopDragging.bind(this));
+
+          // Initial render
+          this.updateSliderPosition(50);
+        }
+
+        startDragging(e) {
+          e.preventDefault();
+          this.isDragging = true;
+          this.element.style.cursor = "grabbing";
+        }
+
+        stopDragging() {
+          this.isDragging = false;
+          this.element.style.cursor = "ew-resize";
+        }
+
+        drag(e) {
+          if (!this.isDragging) return;
+
+          const rect = this.element.getBoundingClientRect();
+          const x = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
+          const percent = (x / rect.width) * 100;
+
+          this.updateSliderPosition(percent);
+        }
+
+        updateSliderPosition(percent) {
+          this.sliderPosition = percent;
+          this.beforeImage.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+          const handle = this.element.querySelector(".slider-handle");
+          if (handle) {
+            handle.style.left = `${percent}%`;
+          }
+        }
+      }
+
+      // Initialize projects
+      function initializeProjects() {
+        const projectsGrid = document.getElementById("projectsGrid");
+
+        projects.forEach((project) => {
+          const projectElement = document.createElement("div");
+          projectElement.className =
+            "bg-white rounded-lg shadow-lg overflow-hidden";
+          projectElement.innerHTML = `
+          <div class="before-after-slider">
+            <img src="${
+              project.afterImage
+            }" alt="After" class="w-full h-full object-cover" />
+            <div class="before-image absolute inset-0">
+              <img src="${
+                project.beforeImage
+              }" alt="Before" class="w-full h-full object-cover" />
+            </div>
+            <div class="slider-handle">
+              <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-sm font-medium text-primary">${
+                project.type
+              }</span>
+              <div class="flex">
+                ${Array(project.testimonial.rating)
+                  .fill()
+                  .map(
+                    () => `
+                  <svg class="w-4 h-4 text-primary fill-current" viewBox="0 0 24 24">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                `
+                  )
+                  .join("")}
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">${
+              project.title
+            }</h3>
+            <p class="text-gray-600 mb-4">${project.description}</p>
+            <blockquote class="italic text-sm text-gray-500 border-l-4 border-primary pl-4">
+              "${project.testimonial.text}"
+              <footer class="mt-2 font-medium text-gray-700">
+                - ${project.testimonial.author}
+              </footer>
+            </blockquote>
+          </div>
+        `;
+
+          projectsGrid.appendChild(projectElement);
+          new BeforeAfterSlider(
+            projectElement.querySelector(".before-after-slider")
+          );
+        });
+      }
+
+      // Initialize Instagram videos
+      function initializeVideos() {
+        const videoScroll = document.getElementById("videoScroll");
+
+        instagramVideos.forEach((video) => {
+          const videoElement = document.createElement("div");
+          videoElement.className =
+            "flex-none w-[300px] bg-white rounded-lg shadow-lg overflow-hidden group";
+          videoElement.innerHTML = `
+          <div class="relative aspect-[9/16] bg-gray-100">
+            <img
+              src="${video.thumbnail}"
+              alt="${video.title}"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/30 transition-colors">
+              <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
+                <h3 class="text-white font-semibold">${video.title}</h3>
+                <p class="text-white/80 text-sm">${video.views}</p>
+              </div>
+            </div>
+          </div>
+        `;
+
+          videoScroll.appendChild(videoElement);
+        });
+      }
+
+      // Video scroll functionality
+      function scrollVideos(direction) {
+        const videoScroll = document.getElementById("videoScroll");
+        const scrollAmount = 300;
+        videoScroll.scrollLeft +=
+          direction === "left" ? -scrollAmount : scrollAmount;
+      }
+
+      // Initialize everything when the page loads
+      document.addEventListener("DOMContentLoaded", () => {
+        initializeProjects();
+        initializeVideos();
+      });
+    </script>
+  </body>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <img
+            src="https://storage.googleapis.com/msgsndr/tV8qFLdWkBLBfjh64cFV/media/6509ff1388b772165a9c9662.svg+xml"
+            alt="Deck Masters AK Logo"
+            class="h-6 mb-4"
+          />
+          <p class="text-gray-300 mb-4">
+            Anchorage's premier deck building specialists. No ghosting. No
+            guesswork. Just gorgeous decks.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-primary hover:text-primary/80 transition">
+              <span class="sr-only">Facebook</span>
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="text-primary hover:text-primary/80 transition">
+              <span class="sr-only">Instagram</span>
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <svg
+                class="w-[18px] h-[18px] mr-3 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              <a href="tel:9077824043" class="hover:text-primary transition"
+                >(907) 782-4043</a
+              >
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-[18px] h-[18px] mr-3 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a
+                href="mailto:contact@deckmastersak.com"
+                class="hover:text-primary transition"
+                >contact@deckmastersak.com</a
+              >
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-[18px] h-[18px] mr-3 text-primary mt-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>625 W 59th Ave Unit J, Anchorage, AK 99518</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Hours & Information</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>Open 7:30am-7:00pm Daily</li>
+            <li>Serving Anchorage & Surrounding Areas</li>
+            <li>Fully Insured and Bonded</li>
+            <li>Deck Building Specialists</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-gray-700 pt-8 mt-8 text-gray-300 text-sm text-center"
+      >
+        <p>
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Deck Masters AK. All rights reserved.
+        </p>
+        <p class="mt-2">
+          <a href="#" class="hover:text-primary transition">Privacy Policy</a>
+          {' | '}
+          <a href="#" class="hover:text-primary transition">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</html>
